@@ -1,0 +1,71 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    will-change: width;
+    background-color: var(--clr-nav);
+    transition: 200ms all ease-in;
+    grid-area: nav;
+
+    &_link {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    &_link:hover {
+        background-color: var(--clr-nav-active);
+        opacity: 0.5;
+    }
+
+    &_icon {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        display: block;
+
+        &__report {
+            background-image: url(./img/report_icon.svg);
+        }
+        &__processing {
+            background-image: url(./img/processing_icon.svg);
+        }
+        &__settings {
+            background-image: url(./img/settings_icon.svg);
+        }
+    }
+
+    .nav_name {
+        height: 0;
+    }
+
+    &_control {
+        cursor: pointer;
+        margin-top: auto;
+        margin-bottom: 10px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .control__item {
+        height: 2px;
+        width: 20px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    &:not(.active) {
+        .nav_name {
+            height: 0;
+        }
+    }
+
+    &.active {
+        width: 200px;
+    }
+}
