@@ -9,12 +9,12 @@ const Sidebar: FC = () => {
     return (
         <nav className={`nav ${isActive}`}>
             <CustomLink className='nav_link' to="/">
-                <span className="nav_icon nav_icon__report" />
-                <span className='nav_name'>Отчёты</span>
-            </CustomLink>
-            <CustomLink className='nav_link' to="/processing">
                 <span className="nav_icon nav_icon__processing" />
                 <span className='nav_name'>Процессы</span>
+            </CustomLink>
+            <CustomLink className='nav_link' to="/reports">
+                <span className="nav_icon nav_icon__report" />
+                <span className='nav_name'>Отчёты</span>
             </CustomLink>
             <CustomLink className='nav_link' to="/settings">
                 <span className="nav_icon nav_icon__settings" />

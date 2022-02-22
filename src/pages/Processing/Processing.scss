@@ -1,0 +1,109 @@
+.process {
+    form {
+        position: relative;
+        max-width: 600px;
+    }
+
+    .d1 input {
+        width: 100%;
+        height: 42px;
+        padding-left: 10px;
+        border: 2px solid #7ba7ab;
+        border-radius: 5px;
+        outline: none;
+        background: #f3f2ed;
+        color: #3d3d3d;
+    }
+    .d1 button {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 42px;
+        height: 42px;
+        border: none;
+        background: #7ba7ab;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        color: #f9f0da;
+    }
+    .d1 button:before {
+        font-family: FontAwesome;
+        font-size: 16px;
+        color: #f9f0da;
+    }
+
+    .d1 .reset {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-image: url(./img/reset.svg);
+        background-size: cover;
+        cursor: pointer;
+        position: absolute;
+        right: 40px;
+        top: 4px;
+        opacity: 0.6;
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .percent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .percent__green {
+        background: rgb(56, 199, 56);
+    }
+    .percent__blue {
+        background: rgb(72, 72, 248);
+    }
+    .percent__yellow {
+        background: yellow;
+    }
+    .percent__red {
+        background: red;
+    }
+}
+
+.item-description {
+    display: flex;
+    padding: 10px;
+
+    .description-left {
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(209, 209, 209);
+        cursor: pointer;
+
+        .des-icon {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url(./img/photocamera.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .description-right {
+        flex: 1;
+        padding-left: 15px;
+    }
+    .desc-text {
+        margin-bottom: 10px;
+
+        span {
+            font-weight: bold;
+            margin-right: 20px;
+            display: inline-block;
+            width: 70px;
+        }
+    }
+}

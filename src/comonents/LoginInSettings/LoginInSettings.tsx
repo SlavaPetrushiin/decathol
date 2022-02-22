@@ -23,7 +23,14 @@ const INPUTS = [
     },
 ];
 
-const LoginInSettings: FC = () => {
+const LOGIN = 'admin';
+const PASSWORD = '134679';
+
+interface ILoginInSettingsProps {
+    setIsAuth: (val: boolean) => void;
+}
+
+const LoginInSettings: FC<ILoginInSettingsProps> = ({ setIsAuth }) => {
     const [values, setValues] = useState({
         username: '',
         password: ''
@@ -31,6 +38,10 @@ const LoginInSettings: FC = () => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        if (values.username === LOGIN && values.password === PASSWORD) {
+            setIsAuth(true);
+        }
     }
 
     return (
@@ -40,7 +51,7 @@ const LoginInSettings: FC = () => {
                 <FormInput
                     {...input}
                     key={input.id}
-                    onChange={() => { }}
+                    onChange={(name, value) => { setValues(prev => ({ ...prev, [name]: value })) }}
                 />)
             )}
             <button className='btn'>Войти</button>

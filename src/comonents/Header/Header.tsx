@@ -1,13 +1,14 @@
 import React, { FC } from 'react';
 import './Header.scss'
+import { Link } from 'react-router-dom';
 
 const Header: FC = () => {
     return (
         <header className='header'>
             <div className="logo">
-                <a href='#' className="logo_link">
+                <Link to='/' className="logo_link">
                     decathlon
-                </a>
+                </Link>
             </div>
         </header>
     )

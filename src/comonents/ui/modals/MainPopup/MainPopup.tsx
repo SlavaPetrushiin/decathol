@@ -14,7 +14,7 @@ const MainPopup: FC<IMainPopupProps> = ({ isOpened, title, onClose, className, c
     return (
         <OverlayPopup isOpened={isOpened} onClose={onClose}>
             <div className={`container ${className}`}>
-                <header>
+                <header className='header'>
                     {title}
                 </header>
                 {children}

@@ -9,7 +9,7 @@ interface IFormInputProps {
     errorMessage?: string;
     label?: string;
     required?: boolean;
-    onChange: () => void;
+    onChange: (name: string, value: string) => void;
 }
 
 const FormInput: FC<IFormInputProps> = (props) => {
@@ -25,7 +25,7 @@ const FormInput: FC<IFormInputProps> = (props) => {
             <label>{label}</label>
             <input
                 {...inputProps}
-                onChange={onChange}
+                onChange={(e: React.FormEvent<HTMLInputElement>) => onChange(e.currentTarget.name, e.currentTarget.value)}
                 onBlur={handleFocus}
                 onFocus={() =>
                     inputProps.name === "confirmPassword" && setFocused(true)
