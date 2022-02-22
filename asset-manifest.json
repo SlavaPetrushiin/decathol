@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/decathol/static/css/main.6de3f0f8.css",
+    "main.js": "/decathol/static/js/main.662387f7.js",
+    "static/media/processing_icon.svg": "/decathol/static/media/processing_icon.d9f4641d41dee879d70a.svg",
+    "static/media/settings_icon.svg": "/decathol/static/media/settings_icon.31b8b80b33678a8a7b24.svg",
+    "static/media/report_icon.svg": "/decathol/static/media/report_icon.bc92edfc75cb900b56dd.svg",
+    "static/media/photocamera.svg": "/decathol/static/media/photocamera.edf5e01072cf547e1991.svg",
+    "index.html": "/decathol/index.html",
+    "static/media/reset.svg": "/decathol/static/media/reset.bd95bb2ae2f9aa335861.svg",
+    "main.6de3f0f8.css.map": "/decathol/static/css/main.6de3f0f8.css.map",
+    "main.662387f7.js.map": "/decathol/static/js/main.662387f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6de3f0f8.css",
+    "static/js/main.662387f7.js"
+  ]
+}
